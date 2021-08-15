@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.swiperefreshlayout.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/swipe_layout"
+    tools:context="com.example.moftech.smartmenu.SearchActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.mancj.materialsearchbar.MaterialSearchBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchBar"
+            android:layout_alignParentTop="true"
+            app:mt_speechMode="false"
+            app:mt_hint="Enter your food"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_below="@+id/searchBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recycler_search"
+            android:scrollbars="vertical"
+            />
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/fab_margin"
+            android:layout_gravity="bottom|end"
+            android:backgroundTint="@android:color/white"
+            app:srcCompat="@drawable/ic_shopping_cart_black_24dp"
+
+            />
+
+    </RelativeLayout>
+</androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

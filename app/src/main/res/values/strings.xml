@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">s\'Menu</string>
+    <string name="slogan">Don\'t worry about what you will eat,No worries smart-\menu here to help,Just Order now!!! </string>
+    <string name="signIn">Sign In</string>
+    <string name="cont">Continue</string>
+    <string name="signUp">Sign Up</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+
+    <string name="phone_number">12345001</string>
+    <string name="hint_password">Password</string>
+    <string name="password">1234</string>
+    <string name="food_name">Food Name</string>
+    <string name="nav_head_name">sMenu Admin</string>
+    <string name="todo">TODO</string>
+    <string name="orderId">Order ID</string>
+    <string name="phone">Phone</string>
+    <string name="forget_password"><u> Forget Password?</u></string>
+    <string name="title_activity_home">Home</string>
+    <string name="facebook_app_id">333611703952472</string>
+    <string name="facebook_login_protocol_name">fb333611703952472</string>
+    <string name="account_kit_client_token">febedbb6fcee4bd0087fe20c2594157b</string>
+</resources>

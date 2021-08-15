@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_margin="0dp"
+    app:cardElevation="4dp"
+    android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            >
+
+         <fragment
+             android:id="@+id/place_autocomplete_fragment"
+             android:name="com.google.android.gms.location.places.ui.PlaceAutocompleteFragment"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"/>
+
+            <com.rengwuxian.materialedittext.MaterialEditText
+              android:hint="Comment"
+              android:id="@+id/editComments"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textColor="@color/colorPrimary"
+              android:text=""
+              android:textColorHint="@color/colorPrimary"
+              android:textSize="30dp"
+              android:inputType="text"
+              app:met_baseColor="@color/colorPrimary"
+              app:met_floatingLabel="highlight"
+              app:met_primaryColor="@color/colorPrimary"
+              app:met_singleLineEllipsis="true" />
+
+            <TextView
+                android:text="Delivery method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rdbShipToAddress"
+                    android:text="Ship To This Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rdbHomeAddress"
+                    android:text=" Home Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <TextView
+                android:text="Payment method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RadioButton
+                    android:id="@+id/rdbCOD"
+                    android:text="Cash on Delivery"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rdbPaypal"
+                    android:text="Paypal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+                <RadioButton
+                    android:id="@+id/rdbSmenuBalance"
+                    android:text="Cash Balance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+        </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
