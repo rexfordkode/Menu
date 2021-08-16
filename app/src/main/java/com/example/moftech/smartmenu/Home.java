@@ -64,7 +64,6 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class Home extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
     FirebaseDatabase database;
     DatabaseReference category;
     FirebaseRecyclerAdapter <Category,MenuViewHolder> adapter;
